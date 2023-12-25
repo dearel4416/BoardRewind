@@ -5,8 +5,8 @@ import lombok.Getter;
 
 @Getter
 public class UserRequestDTO {
-    @Pattern(regexp = "^[a-z0-9]{3,}$")
+    @Pattern(regexp = "^[a-zA-Z0-9]{4,}$")
     private String nickname;
-    @Pattern(regexp = "^{4,}$")
+    @Pattern(regexp = "^[a-zA-Z0-9]{4,}$")
     private String password;
 }

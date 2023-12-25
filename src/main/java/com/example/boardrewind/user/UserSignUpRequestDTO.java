@@ -5,6 +5,6 @@ import lombok.Getter;
 
 @Getter
 public class UserSignUpRequestDTO extends UserRequestDTO {
-        @Pattern(regexp = "^{4,}$")
+        @Pattern(regexp = "^[a-zA-Z0-9]{4,}$")
         private String checkPassword;
 }
